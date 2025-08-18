@@ -14,10 +14,6 @@ export const sidebarNav = [
         title: '基础日语',
         href: '/docs/guides/basic-jp',
       },
-      {
-        title: '小心被骗',
-        href: '/docs/getting-started/quick-start',
-      },
     ],
   },
 

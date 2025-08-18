@@ -19,7 +19,6 @@ import {
   SidebarTrigger,
   SidebarHeaderLogo,
   SidebarHeaderTitle,
-  UserAvatar,
   NestedLink,
 } from '@/components/sidebar';
 import { Github } from 'lucide-react';
@@ -87,7 +86,7 @@ export default function DocsLayout({
           </SidebarContent>
 
           <SidebarFooter>
-            <UserAvatar>
+            {/* <UserAvatar>
               {
                 <Image
                   alt="logo"
@@ -96,15 +95,15 @@ export default function DocsLayout({
                   height={100}
                 />
               }
-            </UserAvatar>
-            <div className="flex flex-col">
+            </UserAvatar> */}
+            {/* <div className="flex flex-col">
               <span className="text-sm font-medium text-gray-900 dark:text-white">
                 Sanjay Rajeev
               </span>
               <span className="text-xs text-gray-500 dark:text-gray-400">
                 sanjayc208@gmail.com
               </span>
-            </div>
+            </div> */}
           </SidebarFooter>
         </Sidebar>
 

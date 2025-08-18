@@ -16,10 +16,13 @@ const Toc: React.FC<TocProps> = ({  }) => {
       <div className="top-0 pb-2">
         <h2 className="flex flex-1 gap-2 item-center font-semibold text-[var(--color)]"><AlignLeft size={19} />On this page</h2>
       </div>
-      <button className="bg-blue-500 text-white px-4 py-2 rounded-md">
+      <button className="bg-blue-500 text-white px-2 py-1 rounded-md">
         整理成图片，我要打印 
-        <br />
       </button>
+      <button className="bg-blue-500 text-white px-2 py-1 rounded-md mt-2">
+        提出意见
+      </button>
+      
     </aside>
   );
 };

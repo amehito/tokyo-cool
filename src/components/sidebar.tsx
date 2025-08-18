@@ -146,31 +146,7 @@ export function Sidebar({
 
   // For mobile: use a fixed overlay when sidebar is open
   if (isMobile) {
-    return (
-      <>
-        {isOpen && (
-          <div
-            className="fixed inset-0 bg-black/50 z-40 md:hidden"
-            onClick={() => setIsOpen(false)}
-          />
-        )}
-        <aside
-          className={cn(
-            `
-            fixed top-0 bottom-0 z-50 flex flex-col
-            ${side === 'left' ? 'left-0' : 'right-0'}
-            ${isOpen ? 'translate-x-0' : side === 'left' ? '-translate-x-full' : 'translate-x-full'}
-            w-[85vw] max-w-[300px] bg-white dark:bg-gray-900 
-            ${side === 'left' ? 'border-r' : 'border-l'} border-border
-            transition-transform duration-300 ease-in-out
-          `,
-            className
-          )}
-          style={{ maxWidth: `${maxWidth}px` }}
-          {...props}
-        />
-      </>
-    );
+    return null
   }
 
   // For desktop: use a fixed sidebar
