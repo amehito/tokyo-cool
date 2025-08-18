@@ -22,7 +22,7 @@ export default function Home() {
             <ModeToggle />
             <Button
               onClick={() =>
-                router.push('https://github.com/sanjayc208/pinexio')
+                router.push('https://github.com/amehito/tokyo-cool')
               }
             >
               <Github className="h-[1.2rem] w-[1.2rem] transition-all" />
@@ -64,9 +64,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-shadow-lg mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
             >
-              A customizable open-source documentation template built with
-              Next.js 15, Tailwind CSS 4, and Contentlayer for beautiful, fast,
-              and flexible documentation.
+              避坑、新手推荐
             </motion.p>
           </div>
 
@@ -80,17 +78,17 @@ export default function Home() {
             <Button
               className="px-6 py-3"
               variant={'primary'}
-              onClick={() => router.push('/docs/getting-started/introduction')}
+              onClick={() => router.push('/docs/guides/immigration-guide')}
               size={'md'}
             >
-              Get Started
+              Gogogo 出发了
             </Button>
             <Button
               className="px-6 py-3 gap-2"
               variant={'outline'}
               size={'md'}
               onClick={() =>
-                router.push('https://github.com/sanjayc208/pinexio')
+                router.push('https://github.com/amehito/tokyo-cool')
               }
             >
               <Github size={20} />
@@ -139,37 +137,6 @@ export default function Home() {
           ))}
         </div>
       </main>
-
-      {/* Sticky Footer */}
-      <footer className="sticky bottom-0 z-10 bg-white/90 dark:bg-gray-950/90 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800">
-        <div className="container mx-auto px-4 py-3 text-center text-gray-600 dark:text-gray-400">
-          <div className="flex justify-end items-center space-x-4">
-            <Button
-              className="px-4 py-2 text-sm font-medium gap-2"
-              onClick={() =>
-                window.open(
-                  'https://vercel.com/new/clone?repository-url=https://github.com/sanjayc208/pinexio',
-                  '_blank'
-                )
-              }
-            >
-              <Image
-                src={'/logos/vercel.png'}
-                height={'20'}
-                width={'20'}
-                alt={'Deploy Vercel'}
-                className={'dark:invert'}
-              />
-              <span>Deploy to Vercel</span>
-            </Button>
-            <div className="flex text-sm text-right gap-3">
-              <p>
-                Built with ❤️ by <strong>Sanjay Rajeev</strong>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

@@ -120,7 +120,7 @@ export default function DocsLayout({
               <ModeToggle />
               <Button
                 onClick={() =>
-                  router.push('https://github.com/amehito/guide-jp')
+                  router.push('https://github.com/amehito/tokyo-cool')
                 }
               >
                 <Github className="h-[1.2rem] w-[1.2rem] transition-all" />
