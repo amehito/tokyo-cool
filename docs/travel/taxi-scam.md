@@ -4,7 +4,6 @@ slug: "taxi-scam"
 description: "总结日本出租车收费规则与黑车骗局，避免被多收费。"
 tags: ["旅游", "交通", "黑车", "日本必坑"]
 date: "2025-08-17"
-updated: "2025-08-17"
 featured: false
 weight: 4
 ---

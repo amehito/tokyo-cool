@@ -108,16 +108,15 @@ export default function Home() {
                 key={label}
                 className="flex flex-col items-center gap-4"
               >
-                <div className="w-20 h-20 md:w-64 md:h-64 flex items-center justify-center hover:scale-110 transition-all gap-2 flex-col">
+                <div className="w-20 h-20 md:w-64 md:h-64 relative flex items-center justify-center hover:scale-101 transition-all gap-2 flex-col">
                   <Image
-                    width={320}
-                    height={320}
                     src={src}
                     alt={`${label} Logo`}
-                    className={className}
+                    fill
+                    className={'w-full h-full object-cover rounded-lg'}
                   />
                 </div>
-                <div className="text-base">{label}</div>
+                <div className="text-base font-bold">{label}</div>
               </motion.div>
             </Link>
           ))}

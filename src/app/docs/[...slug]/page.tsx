@@ -11,6 +11,7 @@ export const generateStaticParams = async () => {
     // For a path like "getting-started/introduction",
     // this creates { slug: ['getting-started', 'introduction'] }
     const slugArray = doc._raw.flattenedPath.split('/');
+    console.log(doc)
     return { slug: slugArray };
   });
 };

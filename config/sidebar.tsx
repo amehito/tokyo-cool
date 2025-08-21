@@ -33,15 +33,22 @@ export const sidebarNav = [
     title: '攻略',
     icon: <Search className="h-5 w-5" />,
     defaultOpen: true,
-    href: '/docs/search-bar',
-    pages: [],
-  },
-  {
-    title: '提意见',
-    icon: <Search className="h-5 w-5" />,
-    defaultOpen: true,
-    href: '/docs/search-bar',
-    pages: [],
-  },
+    pages: [
+      {
+        title: '镰仓',
+        href: '/docs/travel/kamakura',
+      },
+      {
+        title: '观景台',
+        href: '/docs/travel/observation',
+      },
+      {
+        title: '观景台（免费）',
+        href: '/docs/travel/observation-free',
+      }
+    ],
+  }
+ 
+
   
 ];

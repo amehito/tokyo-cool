@@ -8,9 +8,9 @@ export const Carousel = [
     className:''
   },
   {
-    label: '📌日本入境最新攻略❗️手把手教你搞定VJW❗️',
+    label: '📌基础日语❗️新手必看❗️',
     href: '/docs/guides/basic-jp',
-    src: '/logos/next15.png',
+    src: '/carousel/2.png',
     className:''
   },
 ]

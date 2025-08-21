@@ -13,6 +13,7 @@
     "start": "next start",
     "lint": "next lint",
     "build:content": "contentlayer2 build",
+    "type-check": "tsc",
     "format": "prettier --write .",
     "prepare": "husky"
   },

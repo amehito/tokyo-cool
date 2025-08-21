@@ -4,7 +4,6 @@ slug: "renting"
 description: "总结在日本租房过程中容易遇到的坑，以及如何规避。"
 tags: ["生活", "租房", "礼金", "日本必坑"]
 date: "2025-08-17"
-updated: "2025-08-17"
 featured: true
 weight: 2
 ---

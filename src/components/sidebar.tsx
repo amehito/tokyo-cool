@@ -398,7 +398,7 @@ export function NestedLink({
   const isActive =
     propIsActive !== undefined
       ? propIsActive
-      : pathname === href || pathname.startsWith(href);
+      : pathname === href
   const handleClick = () => {
     // Close the sidebar if in mobile view when a link is clicked
     if (isMobile && href) {
