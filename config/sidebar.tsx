@@ -1,10 +1,11 @@
-import {  Rocket, Search, Wrench } from 'lucide-react';
+import { Rocket, Search, Wrench, Pen } from 'lucide-react';
 
 export const sidebarNav = [
   {
     title: 'Gogogo 出发',
     icon: <Rocket className="h-5 w-5" />,
     defaultOpen: true,
+    href: '/docs/guides/immigration-guide',
     pages: [
       {
         title: '入境',
@@ -25,7 +26,7 @@ export const sidebarNav = [
       {
         title: '工作',
         href: '/docs/job/job',
-      }
+      },
     ],
   },
 
@@ -45,10 +46,18 @@ export const sidebarNav = [
       {
         title: '观景台（免费）',
         href: '/docs/travel/observation-free',
-      }
+      },
     ],
-  }
- 
-
-  
+  },
+  {
+    title: '笔记',
+    icon: <Pen className="h-5 w-5" />,
+    defaultOpen: true,
+    pages: [
+      {
+        title: '为什么你的常识，可能是别人眼里的魔法 ✨',
+        href: '/docs/other/professional-work',
+      },
+    ],
+  },
 ];

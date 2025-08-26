@@ -66,7 +66,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-shadow-lg mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
             >
-              避坑、新手推荐
+              避坑、新手推荐 / 个人心得
             </motion.p>
           </div>
 
@@ -106,7 +106,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
                 key={label}
-                className="flex flex-col items-center gap-4"
+                className={`flex flex-col items-center gap-4 ${className}`}
               >
                 <div className="w-20 h-20 md:w-64 md:h-64 relative flex items-center justify-center hover:scale-101 transition-all gap-2 flex-col">
                   <Image
