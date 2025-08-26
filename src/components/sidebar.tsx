@@ -139,14 +139,13 @@ export function MainContent({
 export function Sidebar({
   className,
   children,
-  ...props
 }: React.HTMLAttributes<HTMLElement>) {
-  const { isOpen, side, isMobile, maxWidth, setIsOpen, showIconsOnCollapse } =
+  const { isOpen, side, isMobile, maxWidth, showIconsOnCollapse } =
     useSidebar();
 
   // For mobile: use a fixed overlay when sidebar is open
   if (isMobile) {
-    return null
+    return null;
   }
 
   // For desktop: use a fixed sidebar
@@ -155,7 +154,9 @@ export function Sidebar({
       className={clsx(
         `
         sticky top-0 bottom-0 z-0 flex flex-col h-screen
-        ${side === 'left' ? 'left-0 border-r' : 'right-0 border-l'} border-border
+        ${
+          side === 'left' ? 'left-0 border-r' : 'right-0 border-l'
+        } border-border
         transition-all duration-300 ease-in-out
         bg-sidebar
       `,
@@ -190,7 +191,9 @@ export function SidebarHeader({
     <div
       className={cn(
         `
-        flex items-center h-16 gap-2 border-b ${isOpen ? 'px-8' : ''} border-border
+        flex items-center h-16 gap-2 border-b ${
+          isOpen ? 'px-8' : ''
+        } border-border
         ${isOpen ? '' : 'justify-center'}
       `,
         className
@@ -234,7 +237,9 @@ export function SidebarFooter({
     <div
       className={cn(
         `
-        flex items-center h-16 border-t gap-2 ${isOpen ? 'px-4' : ''} border-border
+        flex items-center h-16 border-t gap-2 ${
+          isOpen ? 'px-4' : ''
+        } border-border
         ${isOpen ? '' : 'justify-center'}
       `,
         className
@@ -315,14 +320,20 @@ export function SidebarMenuItem({
       <div className="flex items-center">
         {icon && (
           <span
-            className={`${isActive ? 'font-medium' : 'text-gray-500 dark:text-gray-400'} ${isOpen ? 'mr-3' : ''}`}
+            className={`${
+              isActive ? 'font-medium' : 'text-gray-500 dark:text-gray-400'
+            } ${isOpen ? 'mr-3' : ''}`}
           >
             {icon}
           </span>
         )}
         {isOpen && (
           <span
-            className={`${isActive ? 'bg-accent text-accent-foreground' : 'text-gray-700 dark:text-gray-300'}`}
+            className={`${
+              isActive
+                ? 'bg-accent text-accent-foreground'
+                : 'text-gray-700 dark:text-gray-300'
+            }`}
           >
             {label}
           </span>
@@ -331,7 +342,9 @@ export function SidebarMenuItem({
       {isOpen && children && !alwaysOpen && isCollapsable && (
         <span className="ml-auto">
           <ChevronRight
-            className={`h-4 w-4 transition-transform ${isExpanded ? 'rotate-90' : ''}`}
+            className={`h-4 w-4 transition-transform ${
+              isExpanded ? 'rotate-90' : ''
+            }`}
           />
         </span>
       )}
@@ -396,9 +409,7 @@ export function NestedLink({
 
   // Determine if this link is active based on the current path
   const isActive =
-    propIsActive !== undefined
-      ? propIsActive
-      : pathname === href
+    propIsActive !== undefined ? propIsActive : pathname === href;
   const handleClick = () => {
     // Close the sidebar if in mobile view when a link is clicked
     if (isMobile && href) {
